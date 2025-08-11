@@ -89,13 +89,10 @@ body::after {
   color: #04119b;
   border-bottom-color: #0c0e74;
 }
-h2{
-
-}
-    * {
+  * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      
     }
 
     body, html {
@@ -156,14 +153,47 @@ h2{
       text-align: center;
       color:aqua;
     }
-    .container>p{
+    .colab{
       border:10px solid #04119b;
       color:#1cbfd4;
       background-color: #02488f;
-      flex-direction: row;
-      text-align: justify;
-      gap:fill;
-      
+      text-align: center;
+    }
+    .placeholder{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 2fr;
+      background-color: #02488f;
+        color:#1cbfd4;
+
+    }
+    .wastewater{
+      background-color: #02488f;
+      color:aqua;
+      width:auto;
+    }
+    .business{
+      background-color:#02488f;
+      color:aqua;
+      width:auto;
+
+
+    }
+    .welding{ 
+      background-color:#02488f;
+      color:aqua;
+      width:auto;
+
+    }
+    .arhcerty{
+       background-color:#02488f;
+      color:aqua;
+      width:auto;
+    }
+    .chess{
+       background-color:#02488f;
+      color:aqua;
+      width:auto;
     }
 
     .hidden {
