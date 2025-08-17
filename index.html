@@ -12,23 +12,70 @@
   
   </style>
 </head>
-<body>
+<body><header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="index.html"
+            >WEBVALDEZ</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="ABOUTME.html"
+                  >ABOUTME</a
+                >
+              </li>
+            
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 
 <!-- Hero Section with Video Background -->
 <section class="video-section" id="intro-video-section">
   <!-- Background Video -->
-  <video class="video-bg" id="intro-video" autoplay muted loop playsinline>
-    <source src="water-waves.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <video autoplay muted loop playsinline id="bg-video" poster="waves.jpg">
+  <source src="water-waves.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-  <!-- Navigation Bar -->
-  <nav class="nav nav-masthead justify-content-center py-3 position-absolute w-100 top-0">
-    <a class="nav-link fw-bold px-3 active" aria-current="page" href="#">Home</a>
-    <a class="nav-link fw-bold px-3" href="#">Features</a>
-    <a class="nav-link fw-bold px-3" href="#">Contact</a>
-  </nav>
+ 
 
   <!-- Floating Content -->
   <div class="content">
@@ -39,7 +86,7 @@
 
   <!-- Main Content -->
 
-<section style="padding: 3rem 1rem; background-color: #03478a; max-width: 1200px; margin: auto;">
+<section style="padding: 3rem 1rem; background-color: #03478a; max-width: auto; margin: 0%;">
   <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
     <!-- Left side: heading and text -->
     <div style="flex: 1 1 300px; padding-right: 2rem;">

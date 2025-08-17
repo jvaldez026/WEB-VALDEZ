@@ -21,6 +21,29 @@ style.css
   border: none;
   object-fit: cover;
 }
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  /* Fallback image under the video */
+  background: url('waves.jpg') center/cover no-repeat;
+}
+
+/* On mobile, hide video and just use the image */
+@media (max-width: 768px) {
+  #bg-video {
+    display: none;
+  }
+  body {
+    background: url('waves.jpg') center/cover no-repeat;
+  }
+}
+
 
 /* Navbar styling */
 .nav-bar {
@@ -117,6 +140,7 @@ body::after {
     }
 
     .content {
+      color:azure;
       position: relative;
       z-index: 1;
       height: 100vh;
@@ -131,6 +155,7 @@ body::after {
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      color: #cceeff;
     }
 
     p {
